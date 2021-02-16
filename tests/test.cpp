@@ -8,8 +8,19 @@ TEST(Constructor, num_of_args){
 Rectangle *rec(7, 8); 
 EXPECT_EQ(rec, rec(7, 8));
 }
-
+TEST(Constructor, data_type){
+Rectangle * data = new Rectangle(10, 13);
+int temp2 = data->getHeight();
+EXPECT_EQ(13, temp2);
 }
+TEST(Constructor, data_type2){
+Rectangle * data = new Rectangle(10, 13);
+int temp = data->getWidth();
+
+EXPECT_EQ(10, temp);
+}
+
+
 TEST(Perimeter, DISABLED_Perim1){
 Rectangle *perim = new perim(5, 5);
 EXPECT_EQ(20, perim->perimeter());
