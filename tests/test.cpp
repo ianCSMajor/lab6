@@ -8,11 +8,15 @@ TEST(Constructor, data_type){
 Rectangle * data = new Rectangle(10, 13);
 EXPECT_EQ(13, data->getHeight());
 EXPECT_EQ(10, data->getWidth());
+delete data;
+data = nullptr;
 }
 
 TEST(Constructor, ConstructTestPerimeter) {
 	Rectangle *per = new Rectangle(5, 3);
 	EXPECT_NEAR(per->perimeter(), 16, 0.01);
+	delete per;
+	per = nullptr;
 }
 TEST(ConstructTest, ConstructTestArea) {     
 Rectangle rect(5, 3);     
