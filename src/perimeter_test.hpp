@@ -26,4 +26,17 @@ TEST(PerimeterTest, PerimeterEvaluateNeg) {
     EXPECT_NEAR(rect.perimeter(), -10, 0.01);
 }
 
+TEST(PerimeterTest, PerimeterEvaluateWrongPos) {
+    Rectangle rect;
+    rect.set_width(7);
+    rect.set_height(4);
+    EXPECT_NEAR(rect.perimeter(), 20, 0.01);
+}
+Test(PerimeterTest, PerimeterEvaluateWrongPos) {
+    Rectangle rect;
+    rect.set_width(6);
+    rect.set_height(4);
+    EXPECT_NEAR(rect.perimeter(), 30, 0.01);
+}
+
 #endif
