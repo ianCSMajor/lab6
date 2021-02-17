@@ -91,7 +91,7 @@ zeroObj.setHeight(3);
 if(zeroObj.getWidth() <= 0){
 zeroObj.setWidth(1);
 }
-EXPECT_NEAR(zeroObj.area(), 3, 0.01);
+EXPECT_NEAR(zeroObj.area(), 4, 0.01);
 }
 
 int main(int argc, char **argv) {   
