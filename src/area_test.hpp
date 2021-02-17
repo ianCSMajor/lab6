@@ -23,4 +23,17 @@ TEST(AreaTest, AreaEvaluateNeg) {
     rect.set_height(4);
     EXPECT_NEAR(rect.area(), -20, 0.001);
 }
+TEST(AreaTest, AreaEvaluateWrongWitdh) {
+    Rectangle rect;
+    rect.set_width(6);
+    rect.set_height(4);
+    EXPECT_NEAR(rect.area(), 20, 0.001);
+}
+TEST(AreaTest, AreaEvaluateWrongArea) {
+    Rectangle rect;
+    rect.set_width(5);
+    rect.set_height(4);
+    EXPECT_NEAR(rect.area(), 30, 0.001);
+}
+
 #endif
