@@ -37,6 +37,4 @@ jobs:
          git submodule add https://github.com/google/googletest.git
           cmake .
           make
-          ./test
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: test
