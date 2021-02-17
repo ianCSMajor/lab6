@@ -37,4 +37,4 @@ jobs:
          git submodule add https://github.com/google/googletest.git
           cmake .
           make
-          ./test
+        run: test
