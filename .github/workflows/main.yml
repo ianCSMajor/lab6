@@ -34,7 +34,6 @@ jobs:
       - name: Run a multi-line script
         run: |
       - name: Run unit tests
-         cd src/
          git submodule add https://github.com/google/googletest.git
           cmake .
           make
