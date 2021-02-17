@@ -1,3 +1,6 @@
+#ifndef _CONSTRUCTOR_TEST_HPP
+#define _CONSTRUCTOR_TEST_HPP
+
 #include "gtest/gtest.h"
 
 #include "../header/rectangle.hpp"
