@@ -34,13 +34,4 @@ TEST(ConstructTest, ConstructTestArea3) {
     Rectangle rect(6, 9);
     EXPECT_NEAR(rect.area(), 54, 0.01);
 }
-TEST(ConstructTest, ConstructTestWrongPerimeter) {
-    Rectangle rect(6, 9);
-    EXPECT_NEAR(rect.perimeter(),60, 0.01);
-}
-
-TEST(ConstructTest, ConstructTestWrongArea) {
-    Rectangle rect(6, 9);
-    EXPECT_NEAR(rect.area(), 20, 0.01);
-}
 #endif
