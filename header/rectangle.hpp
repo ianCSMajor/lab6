@@ -8,11 +8,17 @@ class Rectangle {
     public:
         Rectangle();
         Rectangle(int w,int h);
+        ~Rectangle();
 
-        void set_width(int w);
-        void set_height(int h);
+	//Setters
+        void setWidth(int w);
+        void setHeight(int h);
         int area();
         int perimeter();
+
+	//Getters
+	int getHeight() const;
+	int getWidth() const;
 };
 
 #endif // RECTANGLE_HPP
