@@ -3,7 +3,7 @@
 
 Rectangle::Rectangle()
   :width(0), height(0){}
-  
+  Rectangle::~Rectangle(){}
 Rectangle::Rectangle(int w, int h){
   :width(w), height(h){}
 
@@ -15,6 +15,7 @@ if(width <= 0 || height <= 0)
 	plain->area();
 }
 else{
+	delete *plain;
 	return (width * height);
 }
 }  
@@ -27,9 +28,9 @@ void Rectangle::setWidth(int w){
 void Rectangle::setHeight(int h){
 	height = h;
 }
-int Rectnagle::getHeight(){
+int Rectangle::getHeight() const{
 	return height;
 }
-int Rectangle::getWidth(){
+int Rectangle::getWidth() const{
 	return width; 
 }
