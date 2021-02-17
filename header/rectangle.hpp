@@ -11,8 +11,8 @@ class Rectangle {
         ~Rectangle();
 
 	//Setters
-        void set_width(int w);
-        void set_height(int h);
+        void setWidth(int w);
+        void setHeight(int h);
         int area();
         int perimeter();
 
